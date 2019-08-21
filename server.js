@@ -13,7 +13,7 @@ if (port == null || port == "") {
 app.use(express.static("public"));
 
 
-let connectionString = "mongodb+srv://todoAppUser:belenko@cluster0-3lm1a.mongodb.net/TodoApp?retryWrites=true&w=majority"
+let connectionString = "mongodb+srv://todoAppUser:*****@cluster0-3lm1a.mongodb.net/TodoApp?retryWrites=true&w=majority"
 mongodb.connect(connectionString, {useNewUrlParser:true}, function(err, client) {
   db = client.db()
   app.listen(port);
